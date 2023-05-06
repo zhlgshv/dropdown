@@ -2,4 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+body{
+    background-color: cornsilk;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+nav .container{
+    margin-top: 20px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+}
+.list-item{
+    margin: 0 15px;
+}
+.list-link{
+    position: relative;
+    color: black;
+    transition: .5s;
+}
+.list-link:hover{
+    color: blue;
+}
+.dropdown{
+    text-align: center;
+    padding-top: 5px;
+    position: absolute;
+    transition: .5s;
+    display: none;
+    border-top: 2px solid blue;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+}
+.list-item:hover .dropdown{
+    display: block;  
+}
+.dropdown-link{
+    position: relative;
+    padding: 5px 10px;
+    width: 100px;
+    color: black;
+    transition: .5s;
+}
+.dropdown-link:hover{
+    color: blue;
+}
+.drop{
+    text-align: center;
+    border-top: 2px solid red;
+    top: 40px;
+    left: 100px;
+    position: absolute;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+}
+.drop .dropdown-link{
+    display: none;
+}
+.dropdown-item:hover .drop{
+    display: block;
+}
+.drop-item{
+    padding: 0;
+}
+.drop-link{
+    padding: 5px 10px;
+    width: 110px;
+    color: black;
+    transition: .5s;
+    border-radius: 2px;
+}
+.drop-link:hover{
+    color: blue;
 }
